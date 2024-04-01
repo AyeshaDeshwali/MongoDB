@@ -7,7 +7,7 @@
 #### Exmaple:
 
 ```sql
-db.Students.find({ $and: [ { age: { $gte: 18 } }, { age: { $lte: 25 } } ] })
+db.Students.find({ $and: [ { age: { $gte: 18 } }, { age: { $lt: 25 } } ] })
 ```
 
 #### Ye query wahin dastavizon ko laayega jahan umr 18 se lekar 25 tak hai (samaveshi).
