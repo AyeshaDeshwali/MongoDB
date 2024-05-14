@@ -17,7 +17,7 @@ db.collection.find({
 })
 ```
 
-#### $mod
+#### $mod:
 ```sql
 db.collection.find({ field: { $mod: [5, 0] } })
 ```
@@ -28,7 +28,17 @@ db.collection.find({
   $expr: { $gt: [{ $add: ["$field1", "$field2"] }, 10] }
 })
 ```
-#### $text
+#### $text:
 ```sql
 db.collection.find({ $text: { $search: "keyword" } })
+```
+
+#### $where:
+
+```sql
+db.collection.find({
+  $where: function() {
+    return this.height / this.width > 1.5;
+  }
+})
 ```
