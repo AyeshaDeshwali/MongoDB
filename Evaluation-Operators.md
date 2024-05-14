@@ -32,13 +32,6 @@ db.collection.find({
 ```sql
 db.collection.find({ $text: { $search: "keyword" } })
 ```
-
-#### $where:
-
 ```sql
-db.collection.find({
-  $where: function() {
-    return this.height / this.width > 1.5;
-  }
-})
+db.products.createIndex({name:"text"})
 ```
