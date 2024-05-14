@@ -34,6 +34,12 @@ db.Students.find({ age: { $gte: 25, $lte: 35 } })
 db.Students.find({ age: { $ne: 40 } })
 ```
 
+#### Find document(s) with age equal to 40
+
+```sql
+db.Students.find({ age: { $eq: 40 } })
+```
+
 #### Find document(s) with name 'John' or 'Alice'
 
 ```sql
