@@ -23,6 +23,9 @@ db.Students.find({ $and: [ { age: { $gte: 18 } }, { age: { $lt: 25 } } ] })
 ```sql
 db.Students.find({ age: { $not: { $gte: 18 } } })
 ```
+```sql
+db.products.find({$and:[{age :{ $not: {$gt:50}}},{age:{$not:{$lt:10}}}]})
+```
 #### Ye query wahin dastavizon ko laayega jahan umr 18 se adhik nahin hai.
 
 
@@ -54,6 +57,7 @@ db.Students.find({
 })
 ```
 #### Ye query un dastavizon ko laayega jinme umr 18 se kam hai ya 25 se adhik hai (kam se kam ek shart ko poora karte hue).
+
 
 
 ## Logical Query Operators in MongoDB
