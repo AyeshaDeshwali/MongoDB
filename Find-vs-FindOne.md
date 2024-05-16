@@ -46,7 +46,7 @@ db.products.find().forEach((x)=>{printjson(x)})
 ```sql
 db.products.findOne().forEach((x)=>{printjson(x)})
 TypeError: db.products.findOne().forEach is not a function
-because findOne cursor return ni krta hai
+because findOne cursor yani array[] return ni krta hai
 ```
 ```sql
 db.products.find().limit(2)
