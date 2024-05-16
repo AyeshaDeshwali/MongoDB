@@ -23,3 +23,37 @@ db.collection.findOne({ condition: value });
 
 
 
+# Examples:
+
+```sql
+db.products.find({name:"ok"})
+name ok ni hai to "" empty aayga
+output:""
+```
+```sql
+db.products.findOne({name:"ok"})
+name ok ni hai to null aayge
+output: null
+```
+
+```SQL
+db.products.find().count()
+```
+```sql
+db.products.find().forEach((x)=>{printjson(x)})
+```
+
+```sql
+db.products.findOne().forEach((x)=>{printjson(x)})
+TypeError: db.products.findOne().forEach is not a function
+because findOne cursor return ni krta hai
+```
+```sql
+db.products.find().limit(2)
+```
+```sql
+db.products.find().skip(2)
+```
+```sql
+db.products.find({age:{$lt:30,$gt:5}})
+```
