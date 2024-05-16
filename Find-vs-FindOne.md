@@ -57,3 +57,9 @@ db.products.find().skip(2)
 ```sql
 db.products.find({age:{$lt:30,$gt:5}})
 ```
+```sql
+db.products.find({}, { name: 1, _id: 0 })
+```
+```sql
+db.products.find({ name: "A" }, { _id: 0 })
+```
