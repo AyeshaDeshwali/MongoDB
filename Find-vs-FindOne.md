@@ -1,6 +1,6 @@
 ## 1. find:
 
-#### find method ek cursor return karta hai jo ek query ke matching documents ko represent karta hai.
+#### find method ek cursor yani array[] return karta hai jo ek query ke matching documents ko represent karta hai.
 #### Agar query ke according multiple documents match karte hain, toh find method un documents ko ek cursor ke roop mein return karta hai.
 #### Yeh method ek array of documents ko return nahi karta hai. Document ko access karne ke liye cursor ke methods jaise forEach, map, toArray, etc. ka istemal kiya jata hai.
 #### Example:
